@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+    block variables
+    head
+        include ../global/_head
+        meta(name='keywords', content='' + keywords)
+        meta(name='description', content='' + description)
+        title #{title} 
+        link(rel="stylesheet", href='./css/' + page + '.min.css')
+    body
+        include ../global/_header
+        block header
+
+        block content
+
+        include ../global/_footer
+        block footer
+        
+        if internal
+            script(src='./js/internal.min.js')
+        else
+            script(src='js/' + page + '.min.js')
+        block scripts

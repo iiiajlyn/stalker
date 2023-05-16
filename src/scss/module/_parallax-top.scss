@@ -1,0 +1,176 @@
+.parallax-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: $pallete-dark;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &__background{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        img{
+            height: 100%;
+            min-width: 100%;
+        }
+    }
+
+    &__cloud{
+        position: fixed;
+        top: 0;
+        img{
+            height: 100%;
+        }
+        &:nth-child(1){
+            height: 600px;
+            @media screen and (max-width: 1000px) {
+                display: none;
+            }
+        }
+        &:nth-child(2){
+            height: 500px;
+            transform: scaleX(-1);
+        }
+    }
+    &__sity{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        img{
+            position: absolute;
+            bottom: -100px;
+        }
+        &:nth-child(4){
+            
+            img{
+                height: 600px;
+            }
+            @media screen and (max-width: 1000px) {
+                display: none;
+            }
+        }
+        &:nth-child(5){
+            img{
+                height: 900px;
+                right: -50px;
+            }
+        }
+    }
+    &__fog{
+        width: 2000%;
+        height: 100vh;
+        position: fixed;
+        left: -1900%;
+        img{
+            width: 100%;
+            height: 800px;
+            position: absolute;
+            bottom: -300px;
+        }
+    }
+    &__sign{
+        height: 100vh;
+        width: 100%;
+        position: fixed; 
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+        img{
+            position: absolute;
+            bottom: -50px;
+            right: 20%;
+        }
+    }
+    &__branch{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        img{
+            position: absolute;
+            bottom: -50px;
+            left: -10%;
+            height: 900px;
+        } 
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &__player{
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        img{
+           position: relative;
+           bottom: -50px;
+           height: 100%;
+        } 
+    }
+    &__grass{
+        &-1{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            text-align: center;
+            img{
+                position: absolute;
+                bottom: -50px;
+                height: 200px;
+            }
+        }
+        &-2{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            img{
+                position: absolute;
+                bottom: -100px;
+                height: 300px;
+                right: 25%;
+            }
+        }
+        &-3{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            img{
+                position: absolute;
+                bottom: -50px;
+                height: 400px;
+                right: 10%;
+            }
+        }
+    }
+    &__berd{
+        top: 10%;
+        left: 10%;
+        height: 100px;
+        width: 150px;
+        position: fixed;
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+        img{
+            position: absolute;
+            height: 100%;
+            left: 0;
+        }
+    }
+    &__stalker-logo{
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        img{
+           position: relative;
+           top: 30%;
+           max-width: 750px;
+           width: 100%;
+        }
+    }
+}

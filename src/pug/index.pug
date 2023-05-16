@@ -1,0 +1,14 @@
+extends ./layout/main.pug
+block variables
+    - var page = 'index'
+    - var title = 'Квест: Сталкер - Полное погружение'
+    - var keywords = 'квест, Сталкер'
+    - var description = 'Квест: Сталкер - Полное погружение'
+block content
+    include ./module/_parallax-top
+    include ./module/_characters
+    include ./module/_zomby
+    include ./module/_schedule
+    include ./module/_description-history
+    include ./module/_description-zone
+    include ./module/_description-fear

@@ -1,0 +1,51 @@
+@import '_config';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $pallete-dark;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+.btn {
+    display: block;
+    text-decoration: none;
+    border: 3px solid;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.5s ease-out;
+
+    &.light {
+        color: $pallete-light;
+        border-color: $pallete-light;
+
+        &:hover {
+            background-color: $pallete-light;
+            color: $pallete-dark;
+        }
+    }
+
+    &.dark {
+        color: $pallete-dark;
+        border-color: $pallete-dark;
+
+        &:hover {
+            background-color: $pallete-dark;
+            color: $pallete-light;
+        }
+    }
+    &.success{
+        color: $pallete-success;
+        border-color: $pallete-success;
+        &:hover {
+            background-color: $pallete-success;
+            color: $pallete-light;
+        }
+    }
+}

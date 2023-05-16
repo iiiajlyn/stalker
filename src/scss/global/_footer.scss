@@ -1,0 +1,69 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background-color: $pallete-dark;
+    z-index: 10;
+    background-position: bottom left;
+    position: relative;
+    background-image: url(../img/stena.jpg);
+    background-image: url(../img/stena.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1200px) {
+        height: auto;
+        padding: 20px;
+        padding-bottom: 100px;
+    }
+    &::before{
+        content: '';
+        width: 100%;
+        height: 12px;
+        position: absolute;
+        top: -8px;
+        box-shadow: 0 10px 20px 10px #000;
+        background-color: #252525;
+        background-image: url(../img/line.webp);
+        left: 0;
+    }
+    &__order{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-decoration: none;
+        background-color: $pallete-base;
+        color: $pallete-dark;
+        padding: 15px 20px;
+        border-radius: $radius;
+        box-shadow: 5px 5px 10px 0px #00000082;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 2px solid $pallete-dark;
+        outline: 3px solid $pallete-base;
+        transition: 0.2s ease-out;
+        &:hover{
+            box-shadow: 2px 2px 15px 0px #000000;
+        }
+        @media screen and (max-width: 1000px) {
+           right: auto;
+        }
+    }
+    &__nav{
+        display: flex;
+        color: $pallete-comp;
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: $pallete-dark;
+            border-radius: $radius;
+            transition: 0.2s ease-out;
+            &:hover{
+                color: $pallete-base;
+            }
+        }
+    }
+}

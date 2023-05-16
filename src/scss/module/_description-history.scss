@@ -1,0 +1,91 @@
+.description-history{
+    height: 800px;
+    background-color: $pallete-comp;
+    background-image: url(../img/bagraund-1.jpg);
+    background-image: url(../img/bagraund-1.webp);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &__text{
+        max-width: 700px;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: auto;
+        padding: 30px;
+        box-shadow: 10px 10px 33px rgba(0, 0, 0, 0.7);
+        border-radius: $radius;
+        position: relative;
+        z-index: 10;
+        p{
+            color: $pallete-light;
+            padding-bottom: 10px;
+            line-height: 1.5;
+        }
+        h2{
+            font-family: Conv_trafaret;
+            font-weight: 400;
+            color: #ffe500;
+            font-size: 40px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    &__sun{
+        right:0%; 
+        top:0px;
+        height: 800px;
+        width: 800px;
+        position: absolute;
+        text-align: center;
+        background: radial-gradient(closest-side, #fff3d3 0%, #ffeab100 100%);
+        z-index: 1;
+    }
+    &__branch{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left:-20%;
+        img{
+            position: absolute;
+            bottom: -50px;
+            height: 800px;
+        }
+    }
+    &__grass{
+        &1{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            left:-10%;
+            filter: blur(5px);
+            text-align: left;
+            img{
+                height: 800px;
+                position: absolute;
+                width: 600px;
+                bottom: -100px;
+            }
+        }
+        &2{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            right:-10%;
+            img{
+                height: 800px;
+                position: absolute;
+                right: 0;
+                bottom: -100px;
+            } 
+        }
+    }
+}
